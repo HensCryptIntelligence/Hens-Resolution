@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I.E Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d5f9f9;
+        }
+        .header {
+            background-color: #099419;
+            color: #bef7f7;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #bef7f7;
+            color: #099419;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        .header .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .author {
+            background-color: #f0f0f0;
+            color: #3d3d3d;
+            font-size: 11px;
+            padding: 4px 6px;
+            margin-left: 10px;
+            border-radius: 3px;
+        }
+        .content {
+            padding: 50px;
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .book-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .book-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        .book-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .book-item .type {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+        .book-item .title {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .book-item .author {
+            font-size: 12px;
+            color: #3d3d3d;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">I.E</div>
+        <div class="title">Intelligence.Edu</div>
+        <div class="author">AUTHOR</div>
+    </div>
+    <div class="content">
+        <h2>Books by Learning Things Project</h2>
+        <!---- Three Books -->
+        <div class="book-row">
+            <div class="book-item">
+                <img alt="Books" src="https://storage.googleapis.com/a1aa/image/OVviJRdzlWJtFReA1uhzaejGE6ateUHmBzDgSGMaxjibcJjnA.jpg">
+                <div class="type">Matematika</div>
+                <div class="title">The Project Gutenberg...</div>
+                <div class="author">Project Gutenberg</div>
+            </div>
+            <div class="book-item">
+                <img alt="Book cover of 'The Gutenberg Webster's Unabridged Dictionary Section M, N, O'" src="https://storage.googleapis.com/a1aa/image/iVhireqxQFzOT6CV65QnEfopWlwIkeyj7HZoKAK0ilrf4SGPB.jpg">
+                <div class="type">Natural Science</div>
+                <div class="title">The Gutenberg Webster's...</div>
+                <div class="author">Project Gutenberg</div>
+            </div>
+            <div class="book-item">
+                <img alt="Book cover of 'Project Gutenberg Best'" src="https://storage.googleapis.com/a1aa/image/we8n3MT58EXgGyroKhS3XYHUcz1KXtxqGqIhA0mi4zFIXy4JA.jpg">
+                <div class="type">Social Science</div>
+                <div class="title">Project Gutenberg "Bes...</div>
+                <div class="author">Project Gutenberg</div>
+            </div>
+        </div>
+        <!-- Row 2: Three Books -->
+        <div class="book-row">
+            <div class="book-item">
+                <img alt="Book cover of 'The Gutenberg Webster's Dictionary'" src="https://storage.googleapis.com/a1aa/image/GpiZUNPn9Wp7B9ehyEvWQBfnW14Lp8XrMtLz84zGNSLRukxTA.jpg">
+                <div class="type">Bahasa</div>
+                <div class="title">The Gutenberg Webster's...</div>
+                <div class="author">Project Gutenberg</div>
+            </div>
+            <div class="book-item">
+                <img alt="Book cover of 'The Gutenberg Webster's Unabridged Dictionary Section M, N, O'" src="https://storage.googleapis.com/a1aa/image/iVhireqxQFzOT6CV65QnEfopWlwIkeyj7HZoKAK0ilrf4SGPB.jpg">
+                <div class="type">Seni</div>
+                <div class="title">The Gutenberg Webster's...</div>
+                <div class="author">Project Gutenberg</div>
+            </div>
+            <div class="book-item">
+                <img alt="Books" src="https://storage.googleapis.com/a1aa/image/OVviJRdzlWJtFReA1uhzaejGE6ateUHmBzDgSGMaxjibcJjnA.jpg">
+                <div class="type">Teknologi</div>
+                <div class="title">The Project Gutenberg...</div>
+                <div class="author">Project Gutenberg</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
