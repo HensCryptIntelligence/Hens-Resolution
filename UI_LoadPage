@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce</title>
+    <style>
+        /* CSS untuk Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader {
+            text-align: center;
+        }
+
+        .dots-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 5px;
+            border-radius: 50%;
+            background-color: #3498db;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        .dot:nth-child(1) { animation-delay: -0.3s; }
+        .dot:nth-child(2) { animation-delay: -0.1s; }
+        .dot:nth-child(3) { animation-delay: 0.1s; }
+
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 0.6; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.8); opacity: 0.6; }
+        }
+
+        @media (max-width: 600px) {
+            .dot {
+                height: 8px;
+                width: 8px;
+                margin: 3px;
+            }
+        }
+
+        #main-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <img src="logo1.png" alt="Logo" width="150px" height="150px"> 
+            <div class="dots-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <h1>Welcome to My E-commerce</h1>
+        <p>Content goes here...</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("preloader").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+            }, 2000);
+        };
+    </script>
+</body>
+</html>
